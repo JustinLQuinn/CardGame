@@ -3,16 +3,27 @@
 <head>
     <link href="styles.css" rel="stylesheet">
     <title>Match-Game</title>
-</head>    
+</head>
 <body>
     <h1 class="page-title">Match-Game</h1>
+    <div class="overlay-text visible">
+        Click to Start
+    </div>
+    <div id="game-over-text" class="overlay-text">
+        GAME OVER
+        <span class="overlay-text-small">Click to Restart</span>
+    </div> 
+    <div id="victory-text" class="overlay-text">
+        VICTORY
+        <span class="overlay-text-small">Click to Restart</span>
+    </div>      
     <div class="game-container">
         <div class="game-info-container">
             <div class="game-info">
                 Time <span id="time-remaining">100</span>
             </div>
             <div class="game-info">
-                Sets <span id="Sets">0</span>
+                Flips <span id="flips">0</span>
             </div>
         </div>
         <div class="card" id="card1">
@@ -20,7 +31,11 @@
                 <img class="back-image" src="lib/pictures/rear_image/image001.jpg">
             </div>
             <div class="card-front card-face">
-                <img class="front-image" src="">
+                <span class="card-value card-value-top-left" id="card1-value"></span>
+                <span class="card-value card-value-top-left" id="card1-value"></span>
+                <span class="card-value card-value-top-left" id="card1-value"></span>
+                <span class="card-value card-value-top-left" id="card1-value"></span>
+                <img class="card-suit" src="">
             </div>
         </div>
         <div class="card" id="card2">
